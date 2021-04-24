@@ -33,11 +33,14 @@
             <label>Tipo de Seguro: </label>
             <div>   
                 <label for="basico">Basico</label>
-                <input type="radio" id="basico" name="seguro" value="basico">
+                <input type="radio" id="basico" name="seguro" value="basico" onclick=mostrarPrecio(1)>
+                <p class="container_form-precios"><span>$</span>500</p>
                 <label for="intermedio">Intermedio</label>
-                <input type="radio" id="intermedio" name="seguro" value="intermedio">
+                <input type="radio" id="intermedio" name="seguro" value="intermedio" onclick=mostrarPrecio(2)>
+                <p class="container_form-precios"><span>$</span>1000</p>
                 <label for="premium">Premium</label>
-                <input type="radio" id="premium" name="seguro" value="premium">
+                <input type="radio" id="premium" name="seguro" value="premium" onclick=mostrarPrecio(3)>
+                <p class="container_form-precios"><span>$</span>1500</p>
             </div>
             <input type="submit" id="submit">
         </form>
@@ -49,7 +52,7 @@
 
 
 
-
+    <script src="main.js"></script>
 </body>
 
 </html>

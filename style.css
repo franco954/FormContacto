@@ -104,7 +104,7 @@ body{
 
 .container_form{
 	padding: 40px;
-	width: 450px;
+	width: 37%;
 	margin: 25px auto;
 	background-color: rgb(0, 0, 0, 0.7);
 	box-sizing: border-box;
@@ -147,6 +147,13 @@ body{
 	background-color: rgb(8, 7, 71);
 }
 
+.p{
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	margin: auto;
+}
+
+
 
 #submit{
 	text-align: center;
@@ -166,7 +173,7 @@ body{
 .container_form div{
 	margin-top: 17px;
 	display: grid;
-	grid-template-columns: repeat(2, 80px);
+	grid-template-columns: repeat(3, 80px);
 	grid-template-rows: repeat(3, 30px);
 	justify-content: center;
 }
@@ -176,9 +183,49 @@ body{
 }
 
 
+.container_form-precios{
+	font-size: 18px;
+	color: #fff;
+	margin: auto;
+	opacity: 0;
+}
+
+.container_form-precios span{
+	color: #85bb65;
+}
 
 
 
+
+@media (max-width: 1000px){
+	.container_form{
+		width: 50%;
+	}
+	body{
+		padding: 5px 2px;
+	}
+}
+
+
+
+@media (max-width: 800px){
+	.container_form{
+		width: 70%;
+	}
+	body{
+		padding: 10px 5px;
+	}
+}
+
+
+@media (max-width: 480px){
+	.container_form{
+		width: 100%;
+	}
+	body{
+		padding: 15px 12px;
+	}
+}
 
 
 
